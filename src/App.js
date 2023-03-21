@@ -33,6 +33,11 @@ function App() {
       <Header openCart={openCart} />
       <Main />
       <Cart closeCart={closeCart} showCart={showCart} data={cartItems} deleteFromCart={deleteFromCart}/>
+      <section className='products'>
+        <h2>Products</h2>
+        <Shop data={products} addToCart={addToCart} openCart={openCart} />
+      </section>
+      <Footer />
     </>
   );
 }
