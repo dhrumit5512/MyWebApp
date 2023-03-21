@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 
 const Product = ({data, addToCart, openCart}) => {
     const { id, title, pageCount, thumbnailUrl, categories,authors } = data;
-
     return (
         <div className='product' key={id}>
             <img src={thumbnailUrl} />

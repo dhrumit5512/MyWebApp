@@ -19,7 +19,7 @@ function App() {
   const [cartItems, setCartItems] = useState([]);
 
   const addToCart = (id) => {
-    const itemToAdd = products.jackets.find((product) => product.id === id);
+    const itemToAdd = products.book.find((product) => product.id === id);
     setCartItems([...cartItems, itemToAdd]);
   };
 
