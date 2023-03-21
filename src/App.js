@@ -2,6 +2,9 @@ import React from 'react';
 import { useState } from 'react';
 import Header from './Header';
 import Main from './Main';
+import Cart from './Cart';
+import Footer from './Footer';
+import Shop from './Shop';
 
 function App() {
 
@@ -13,6 +16,7 @@ function App() {
     setShowCart(false);
   }
   const [cartItems, setCartItems] = useState([]);
+
   const addToCart = (id) => {
     const itemToAdd = products.jackets.find((product) => product.id === id);
     setCartItems([...cartItems, itemToAdd]);
