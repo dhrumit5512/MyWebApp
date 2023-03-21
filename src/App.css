@@ -108,6 +108,55 @@ div.main div.cta {
 }
 
 
+/* Product Section Styling */
+
+section {
+  max-width: var(--body-width);
+  margin: 2rem auto;
+}
+
+section.products h2 {
+  margin: 4rem 0;
+  text-align: center;
+  font-size: var(--med-heading);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 5rem;
+}
+
+.product {
+color:rgb(70, 70, 70);
+}
+
+.product-button {
+  background-color: orange;
+  cursor: pointer;
+  font-weight: bold;
+  line-height: 20px;
+  padding: 10px 12px;
+  transition: all 200ms;
+}
+
+.product-button:hover,
+.product-button:focus {
+  filter: brightness(150%);
+}
+
+.price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+span.price {
+  font-weight: 500;
+}
+
+/* Footer Styling */
 
 footer {
   display: grid;
