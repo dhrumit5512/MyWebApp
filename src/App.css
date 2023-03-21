@@ -13,8 +13,6 @@ img {
   width: 100%;
 }
 
-/* Navigation Styling */
-
 header {
   background-color:orange;
 }
@@ -44,8 +42,6 @@ nav a {
 nav a:hover::after {
   width: 100%;
 }
-
-/* Hero Section */
 
 .main {
   min-height: 100vh;
@@ -82,7 +78,6 @@ div.main div.cta {
   margin: 0 5rem 5rem;
 }
 
-/* Cart */
 
 .cart {
   position: fixed;
@@ -107,8 +102,6 @@ div.main div.cta {
   border-top: 1px solid black;
 }
 
-
-/* Product Section Styling */
 
 section {
   max-width: var(--body-width);
@@ -156,7 +149,6 @@ span.price {
   font-weight: 500;
 }
 
-/* Footer Styling */
 
 footer {
   display: grid;
