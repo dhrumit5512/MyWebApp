@@ -5,6 +5,7 @@ import Main from './Main';
 import Cart from './Cart';
 import Footer from './Footer';
 import Shop from './Shop';
+import products from './Products.json';
 
 function App() {
 
