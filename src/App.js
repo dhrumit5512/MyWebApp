@@ -1,5 +1,5 @@
-import React from 'react';
-import { useState } from 'react';
+import './App.css';
+import React, { useState, useEffect } from 'react';
 import Header from './Header';
 import Main from './Main';
 import Cart from './Cart';
@@ -35,7 +35,7 @@ function App() {
       <Main />
       <Cart closeCart={closeCart} showCart={showCart} data={cartItems} deleteFromCart={deleteFromCart}/>
       <section className='products'>
-        <h2>BOOK LIST</h2>
+        <h2>Products</h2>
         <Shop data={products} addToCart={addToCart} openCart={openCart} />
       </section>
       <Footer />
