@@ -1,3 +1,87 @@
+:root {
+  --body-width: calc(100% - 150px);
+  --main-color: white;
+  --cta-color: rgb(237, 160, 77);
+  --text-color: black;
+
+  --lrg-heading: clamp(3.36rem, calc(2.87rem + 2.45vw), 4.77rem);
+  --med-heading: clamp(2.33rem, calc(2.08rem + 1.25vw), 3.05rem);
+  --sml-heading: clamp(1.20rem, calc(1.07rem + 0.63vw), 1.56rem);
+}
+
+img {
+  width: 100%;
+}
+
+/* Navigation Styling */
+
+header {
+  background-color:orange;
+}
+
+nav {
+  display: flex;
+  color: black;
+  justify-content: space-between;
+  margin: auto;
+  padding: 20px ;
+  align-items: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul>* {
+  padding-left: 6rem;
+}
+
+nav a {
+  color: var(--main-color);
+  position: relative;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* Hero Section */
+
+.main {
+  min-height: 100vh;
+  background-color: rgb(213, 136, 30);
+  background-image: url(../public/assets/main.jpeg);
+  background-size: cover;
+  background-position: center;
+  color: var(--main-color);
+}
+
+.main h2 {
+  font-size: var(--lrg-heading);
+}
+
+.main p {
+  font-size: var(--sml-heading);
+}
+
+.main-btn {
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 13px 53px;
+  width: auto;
+}
+
+.main-btn:hover {
+  background-color: var(--cta-color);
+}
+
+div.main div.cta {
+  position: absolute;
+  bottom: 0;
+  margin: 0 5rem 5rem;
+}
+
 footer {
   display: grid;
   gap: 4rem;
