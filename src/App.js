@@ -35,7 +35,7 @@ function App() {
       <Main />
       <Cart closeCart={closeCart} showCart={showCart} data={cartItems} deleteFromCart={deleteFromCart}/>
       <section className='products'>
-        <h2>Products</h2>
+        <h2>BOOK LIST</h2>
         <Shop data={products} addToCart={addToCart} openCart={openCart} />
       </section>
       <Footer />
