@@ -28,6 +28,7 @@ function App() {
     <>
       <Header openCart={openCart} />
       <Main />
+      <Cart closeCart={closeCart} showCart={showCart} data={cartItems} deleteFromCart={deleteFromCart}/>
     </>
   );
 }
